@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Add Item -->
+        <div class="modal">
+            <div class="add-item">
+                <div class="title-add">
+                    Add Items
+                </div>
+                <table id="table-add" border="0" cellspacing="0" cellpadding="1">
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input id="price" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>
+                            <select name="category" id="category">
+                                <option value="Category">Category</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-add">
+                    <button id="btn-cancel-add">Cancel</button>
+                    <Button id="btn-add">Add</Button>
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="main">
+            <!-- Main Header -->
+            <div class="main-header">
+                <div class="menu">
+                    <img class="img-menu" src="assets/img/menu.png" alt="menu">
+                </div>
+                <div class="title">
+                    Food Items
+                </div>
+                <div class="search">
+                    <img src="assets/img/magnifying-glass.png" alt="search">
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <!-- Side Bar Navigation -->
+                <div class="side-bar">
+                    <div class="eat">
+                        <img src="assets/img/fork.png" alt="eat">
+                    </div>
+                    <div class="history">
+                        <img src="assets/img/clipboard.png" alt="history">
+                    </div>
+                    <div class="add">
+                        <img src="assets/img/add.png" alt="add">
+                    </div>
+                </div>
+                <!-- Food List -->
+                <div class="food-list">
+                    <div class="box" id="box1">
+                        <img src="assets/img/jeremy-ricketts-6ZnhM-xBpos-unsplash.png" alt="espresso">
+                        <div class="menu-name">Espresso</div>
+                        Rp. 10.000
+                    </div>
+                    <div class="box" id="box2">
+                        <img src="assets/img/bear.png" alt="coffelatte">
+                        <div class="menu-name">Coffe Latte</div>
+                        Rp. 15.000
+                    </div>
+                    <div class="box" id="box3">
+                        <img src="assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" alt="cappucino">
+                        <div class="menu-name">Cappucino</div>
+                        Rp. 5.000
+                    </div>
+                    <div class="box" id="box4">
+                        <img src="assets/img/redvelvet.png" alt="redvelvet">
+                        <div class="menu-name">Red Velvet Latte</div>
+                        Rp. 33.000
+                    </div>
+                    <div class="box" id="box5">
+                        <img src="assets/img/chocorum.png" alt="chocorum">
+                        <div class="menu-name">Choco Rhum</div>
+                        Rp. 28.000
+                    </div>
+                    <div class="box" id="box6">
+                        <img src="assets/img/blackforest.png" alt="blackforest">
+                        <div class="menu-name">Black Forest</div>
+                        Rp. 30.000
+                    </div>
+                    <div class="box" id="box7">
+                        <img src="assets/img/chickenkatsu.png" alt="chickenkatsu">
+                        <div class="menu-name">Chicken Katsu Dabu-dabu</div>
+                        Rp. 60.000
+                    </div>
+                    <div class="box" id="box8">
+                        <img src="assets/img/salmon.png" alt="salmon">
+                        <div class="menu-name">Salmon Truffle Teriyaki</div>
+                        Rp. 60.000
+                    </div>
+                    <div class="box" id="box9">
+                        <img src="assets/img/wiener.png" alt="wiener">
+                        <div class="menu-name">Wiener Schnitzel</div>
+                        Rp. 69.000
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart -->
+        <div class="cart">
+            <!-- Cart Header -->
+            <div class="cart-header">
+                Cart&nbsp;
+                <span class="cart-n" for="n">0</span>
+            </div>
+            <!-- Cart Content -->
+            <div class="cart-content">
+                <div class="cart-value">
+                    <div class="value">
+                        <img src="assets/img/food-and-restaurant.png" alt="food-cart">
+                        <br>
+                        <span class="cart-empty" for="empty">Your cart is empty</span>
+                        <br>
+                        <span class="cart-add" for="add">Please add some items from the menu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

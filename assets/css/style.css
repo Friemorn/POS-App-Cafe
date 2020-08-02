@@ -1,0 +1,622 @@
+/* Desktop */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font: bold 20px Arial, Verdana, sans-serif;
+}
+
+/* Home */
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(190, 195, 202, 0.3)
+}
+
+/* Bagi 2 bagian menjadi main & cart */
+.main {
+    flex: 2;
+}
+
+.cart {
+    flex: 1;
+    background-color: white;
+    border-left: 1px solid rgba(141, 141, 141, 0.3);
+    box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* Main header */
+/* Berisi Menu, Food Items, Search */
+.main-header {
+    width: 100%;
+    height: 80px;
+    font-size: 25px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    flex: 1;
+}
+
+.title {
+    width: 95%;
+    text-align: center;
+}
+
+.search {
+    flex: 1;
+    text-align: right;
+}
+
+/* Web Content */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(190, 195, 202, 0.3);
+}
+
+/* Bagi 2 bagian menjadi Side Bar & Food List */
+.side-bar {
+    width: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.1);
+}
+
+.eat,
+.history,
+.add {
+    padding: 20px 5px;
+}
+
+.side-bar img {
+    width: 40px;
+    height: 40px;
+}
+
+.food-list {
+    width: 95%;
+    height: 820px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 20px;
+}
+
+.box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.box .menu-name {
+    font-weight: 500;
+}
+
+.img-box {
+    height: 200px;
+    width: 250px;
+}
+
+/* Cart Header */
+.cart-header {
+    width: 100%;
+    height: 80px;
+    font-size: 25px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cart-n {
+    height: 27px;
+    width: 27px;
+    text-align: center;
+    color: white;
+    background-color: #57CAD5;
+    border-radius: 50%;
+}
+
+/* Cart Content */
+.cart-content {
+    width: 80%;
+    height: 820px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-value {
+    flex: 1;
+    width: 400px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.value {
+    text-align: center;
+}
+
+.value img {
+    margin: 50px auto 20px;
+}
+
+.cart-empty {
+    color: black;
+}
+
+.cart-add {
+    color: #cecece;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Home Select */
+.tick {
+    height: 200px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+
+#img-tick {
+    padding: 80px 100px;
+}
+
+.cart-value .cart-list img {
+    height: 100px;
+    width: 100px;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.cart-img,
+.cart-quantity,
+.cart-price {
+    flex: 1;
+    height: 100px;
+    width: 100px;
+}
+
+.cart-img {
+    text-align: center;
+}
+
+.cart-quantity {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.qty {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+}
+
+.cart-price {
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 77px;
+}
+
+.number {
+    color: #82DE3A;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #82DE3A;
+    text-align: center;
+    line-height: 25px;
+}
+
+.minus,
+.plus {
+    color: #82DE3A;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(130, 222, 58, 0.2);
+    border: 1px solid #82DE3A;
+    text-align: center;
+    line-height: 25px;
+}
+
+.cart-total {
+    flex: 1;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.total {
+    height: 50px;
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.total-ppn {
+    height: 50px;
+    width: 50%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.tot {
+    font-size: 20px;
+}
+
+.ppn {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.total-price {
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#btn-checkout,
+#btn-cancel-select {
+    height: 50px;
+    width: 95%;
+    margin: 10px auto;
+    border: none;
+    font-size: 18px;
+}
+
+#btn-checkout {
+    color: white;
+    background-color: #57CAD5;
+    text-align: center;
+}
+
+#btn-cancel-select {
+    color: white;
+    background-color: #F24F8A;
+    text-align: center;
+}
+
+/* Add Data */
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 5;
+}
+
+.add-item {
+    width: 650px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 150px auto;
+    border-radius: 10px;
+}
+
+.title-add {
+    padding: 20px;
+}
+
+#table-add {
+    padding: 0px 20px;
+    width: 100%;
+    height: 50%;
+    margin-top: -50px;
+}
+
+input[type=text],
+#category {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#price {
+    width: 70%;
+}
+
+#category {
+    width: 50%;
+    font-size: 20px;
+    color: #CECECE;
+}
+
+.button-add {
+    text-align: right;
+    padding: 20px;
+}
+
+#btn-cancel-add,
+#btn-add {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#btn-cancel-add {
+    color: white;
+    background-color: #F24F8A;
+}
+
+#btn-add {
+    color: white;
+    background-color: #57CAD5;
+}
+
+/* Checkout */
+.checkout {
+    width: 550px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+#table-checkout-header {
+    padding: 20px;
+    width: 100%;
+}
+
+#table-checkout-value {
+    padding: 0px 20px;
+    width: 100%;
+    height: 50%;
+}
+
+.table-right {
+    text-align: right;
+}
+
+.button-checkout {
+    padding: 20px;
+}
+
+.cashier {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#btn-print,
+#btn-send-email {
+    color: white;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+}
+
+#btn-print {
+    background-color: #F24F8A;
+}
+
+#btn-send-email {
+    background-color: #57CAD5;
+}
+
+#or {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* History */
+.history-menu {
+    width: 5%;
+}
+
+.history-title {
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+}
+
+.history-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 245, 245);
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.history-list {
+    width: 100%;
+    height: 1000px;
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.todays-income,
+.orders,
+.years-income {
+    flex: 1;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+div.card img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: -5;
+}
+
+.todays-income {
+    background: linear-gradient(285.38deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+    margin-right: 10px;
+}
+
+.orders {
+    background: linear-gradient(285.38deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.years-income {
+    background: linear-gradient(285.38deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+    margin-left: 10px;
+}
+
+.card-title,
+.card-percentage {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.revenue {
+    width: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#table-revenue-header {
+    width: 100%;
+    padding: 20px;
+}
+
+div.revenue img {
+    width: 100%;
+}
+
+.revenue,
+#ro {
+    font-size: 25px;
+}
+
+.recent-order {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#table-recent-header,
+#table-recent-value {
+    width: 100%;
+    padding: 20px;
+}
+
+.table-recent-value {
+    font-size: 10px;
+}
+
+.table-value {
+    text-align: center;
+}
+
+.drop-down {
+    font-size: 15px;
+    height: 27px;
+    width: 70px;
+    background-color: #CECECE;
+    border-radius: 10px;
+    border: none;
+}
+
+
+thead th {
+    border-bottom: 1px solid #CECECE;
+}
+
+.table-value {
+    color: #CECECE;
+    font-weight: 500;
+}
+
+/* Tablet */
+@media(max-width: 764px) {
+
+    .food-list,
+    .cart-content {
+        height: 730px;
+    }
+}
+
+/* Handphone */
+@media (max-width: 576px) {
+
+    .food-list,
+    .cart-content {
+        height: 520px;
+    }
+}
